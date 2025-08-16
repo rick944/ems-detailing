@@ -5,20 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EMS Detailing</title>
   <meta name="robots" content="noindex">
-  <style>body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;padding:40px;max-width:720px;margin:auto;line-height:1.5} a{color:#E02721;text-decoration:none} .btn{display:inline-block;padding:12px 16px;border:1px solid #E02721;border-radius:999px;margin-right:10px}</style>
   <script>
     try{
       const saved = localStorage.getItem('ems_lang');
       const pref = saved || (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      if(pref.startsWith('es')) location.replace('./es/');
-      else location.replace('./en/');
-    }catch(e){}
+      if(pref.startsWith('es')) location.replace('/es/');
+      else location.replace('/en/');
+    }catch(e){ location.replace('/en/'); }
   </script>
 </head>
-<body>
-  <h1>EMS Detailing</h1>
-  <p>Choose your language / Elija su idioma:</p>
-  <p><a class="btn" href="./en/" onclick="localStorage.setItem('ems_lang','en')">English</a>
-     <a class="btn" href="./es/" onclick="localStorage.setItem('ems_lang','es')">Español</a></p>
-</body>
+<body></body>
 </html>
