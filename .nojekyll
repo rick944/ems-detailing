@@ -1,4 +1,1 @@
-curl -L -o .nojekyll "https://sandbox:/mnt/data/.nojekyll"  # or: touch .nojekyll
-git add .nojekyll
-git commit -m "Add .nojekyll to disable Jekyll"
-git push origin main
+
