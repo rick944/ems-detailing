@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/assets/style.css?v=4">
+  <!-- critical for mobile BEFORE redirect -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="stylesheet" href="/assets/style.css?v=5">
   <title>EMS Detailing</title>
+
+  <!-- canonical + OG/Twitter with your real domain -->
+  <link rel="canonical" href="https://ems-detailing.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="EMS Detailing">
   <meta property="og:description" content="San Antonio Car Detailing — Interior & Exterior, Buff & Wax, Ceramic Coating.">
-  <meta property="og:url" content="https://YOURDOMAIN.com/">
-  <meta property="og:image" content="https://YOURDOMAIN.com/assets/ems_og_1200x630_en.png">
+  <meta property="og:url" content="https://ems-detailing.com/">
+  <meta property="og:image" content="https://ems-detailing.com/assets/ems_og_1200x630_en.png">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="EMS Detailing">
   <meta name="twitter:description" content="San Antonio Car Detailing — Interior & Exterior, Buff & Wax, Ceramic Coating.">
-  <meta name="twitter:image" content="https://YOURDOMAIN.com/assets/ems_og_1200x630_en.png">
-  
+  <meta name="twitter:image" content="https://ems-detailing.com/assets/ems_og_1200x630_en.png">
+
   <script>
-    try{
+    try {
       const saved = localStorage.getItem('ems_lang');
-      const pref = saved || (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      if(pref.startsWith('es')) location.replace('/es/');
+      const pref = (saved || (navigator.language || navigator.userLanguage || 'en')).toLowerCase();
+      if (pref.startsWith('es')) location.replace('/es/');
       else location.replace('/en/');
-    }catch(e){ location.replace('/en/'); }
+    } catch(e) { location.replace('/en/'); }
   </script>
+  <!-- no-JS fallback so users still get to EN -->
+  <noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript>
 </head>
 <body></body>
 </html>
